@@ -1,19 +1,44 @@
-<label>เลือกประเภทหนัง</label>
-<br><br>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMatch</title>
 
-<select id="genre">
-    <option value="Action">Action</option>
-    <option value="Drama">Drama</option>
-    <option value="Comedy">Comedy</option>
-    <option value="Horror">Horror</option>
-    <option value="Sci-Fi">Sci-Fi</option>
-    <option value="Fantasy">Fantasy</option>
-    <option value="Romance">Romance</option>
-    <option value="Thriller">Thriller</option>
-</select>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-<br><br>
+<body>
 
-<button id="randomBtn">
-    🎲 สุ่มหนัง
-</button>
+    <h1>🎬 CineMatch</h1>
+
+    <h2>สุ่มหนังและซีรีส์ด้วยหลักคณิตศาสตร์</h2>
+
+    <label for="genre">เลือกประเภทหนัง</label>
+
+    <br><br>
+
+    <select id="genre">
+        <option value="Action">Action</option>
+        <option value="Drama">Drama</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Horror">Horror</option>
+        <option value="Sci-Fi">Sci-Fi</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Romance">Romance</option>
+        <option value="Thriller">Thriller</option>
+    </select>
+
+    <br><br>
+
+    <button id="randomBtn">
+        🎲 สุ่มหนัง
+    </button>
+
+    <div id="result"></div>
+
+    <script src="movies.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
